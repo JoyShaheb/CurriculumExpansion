@@ -38,7 +38,7 @@ currentDateParagraph.textContent = formattedDate;
 dateOptionsSelectElement.addEventListener("change", () => {
   switch (dateOptionsSelectElement.value) {
     case "yyyy-mm-dd":
-// start with split and join, but a manual loop to reverse array?
+      // start with split and join, but a manual loop to reverse array?
       currentDateParagraph.textContent = formattedDate
         .split("-")
         .reverse()
@@ -50,7 +50,7 @@ dateOptionsSelectElement.addEventListener("change", () => {
       break;
 
     default:
-      currentDateParagraph.textContent = `${day}-${month}-${year}`;
+      currentDateParagraph.textContent = formattedDate;
       break;
   }
 });

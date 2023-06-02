@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,6 +39,8 @@ body {
   background-color: var(--yellow);
 }
 
+/* Mark here */
+
 .dropdown-container {
   width: 100%;
   margin: 40px auto;
@@ -49,39 +49,40 @@ body {
 
 select {
   display: block;
-  margin: 20px auto 0;
-  width: 100%;
+  margin: 20px auto;
   height: 50px;
   font-size: 100%;
   font-weight: bold;
+
   cursor: pointer;
   background-color: var(--white);
   border: none;
   color: var(--dark-grey);
   appearance: none;
-  padding: 10px;
-  padding-right: 38px;
+  padding: 10px 38px 10px 10px;
+
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: color 0.3s ease, background-color 0.3s ease,
-    border-bottom-color 0.3s ease;
+
+  /* transition: color 0.3s ease, background-color 0.3s ease,
+    border-bottom-color 0.3s ease; */
 }
 
 .select-icon {
   position: absolute;
   top: 4px;
   right: 4px;
+  pointer-events: none;
   width: 30px;
   height: 36px;
-  pointer-events: none;
   padding-left: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* transition: background-color 0.3s ease, border-color 0.3s ease; */
 }
 
-.select-icon svg.icon {
+/* .select-icon svg.icon {
   transition: fill 0.3s ease;
   fill: var(--dark-grey);
-}
+} */
 
 #current-date {
   font-size: 2rem;
